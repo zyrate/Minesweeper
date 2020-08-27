@@ -82,6 +82,10 @@
     <td>记旗数、计分</td>
   </tr>
   <tr>
+    <td>SettingDialog.java</td>
+    <td>设置自动扫雷的速度</td>
+  </tr>
+  <tr>
     <td>icons(目录)</td>
     <td>图片资源目录</td>
   </tr>
