@@ -17,9 +17,14 @@
 
 
 ## 主界面
+<img src="https://raw.githubusercontent.com/PowerPollery/MinesweeperV1/master/%E4%B8%BB%E7%95%8C%E9%9D%A2.PNG" alt="主界面" width="400" height="460"/>
 
-## 代码结构
+## 文件一览
 <table>
+  <tr>
+    <th>文件(夹)</th>
+    <th>用途</th>
+  </tr>
   <tr>
     <td>Archiver.java</td>
     <td>存档、读档</td>
@@ -81,6 +86,11 @@
     <td>图片资源目录</td>
   </tr>
 </table>
-	
+
+## 代码结构
+
+<img src="https://github.com/PowerPollery/MinesweeperV1/blob/master/%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84.PNG" alt="代码结构"/>
+
+
 	
 	
