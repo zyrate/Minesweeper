@@ -74,6 +74,7 @@ public class GameBiz implements Serializable{//可序列化接口，用于存读
         gw.set(gm);//!设置！菜单栏，不是添加
         gw.pack();
         gw.setLocationRelativeTo(null);//居中显示！！！
+
     }
 
     //同等级重置

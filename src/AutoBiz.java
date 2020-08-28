@@ -1,5 +1,6 @@
 
 import java.awt.*;
+import java.util.Random;
 
 /**
  * 自动扫雷的逻辑
@@ -67,36 +68,36 @@ public class AutoBiz extends Thread{
         }
         //以上两种情况不成立，即没有确定的一步，就碰运气点
         /*以下是按顺序点*/
-        for(int i = 0; i < gb.bm.getRows(); i++) {
-            for (int j = 0; j < gb.bm.getCols(); j++) {
-                MineButton mb = gb.bm.getMineButton(i, j);
-                if(!mb.isSweeped() && !mb.isFlag()){//没被扫过不是旗，就点
-                    autoEvents.mousePressed(mb, AutoEvents.LEFT);
-                    try {
-                        Thread.sleep(pressTime);
-                    } catch (InterruptedException e) {}
-                    autoEvents.mouseReleased(mb, AutoEvents.LEFT);
-                    autoEvents.mouseClicked(mb, AutoEvents.LEFT);
-                    return;
-                }
-            }
-        }
-        /*以下是随机点*/
-//        int x, y;
-//        Random random = new Random();
-//        while(true){
-//            x = random.nextInt(gb.bm.getCols());
-//            y = random.nextInt(gb.bm.getRows());
-//            MineButton mb = gb.bm.getMineButton(y, x);
-//            if(mb.isFlag() || mb.isSweeped())   continue;
-//            autoEvents.mousePressed(mb, AutoEvents.LEFT);
-//            try {
-//                Thread.sleep(pressTime);
-//            } catch (InterruptedException e) {}
-//            autoEvents.mouseReleased(mb, AutoEvents.LEFT);
-//            autoEvents.mouseClicked(mb, AutoEvents.LEFT);
-//            return;
+//        for(int i = 0; i < gb.bm.getRows(); i++) {
+//            for (int j = 0; j < gb.bm.getCols(); j++) {
+//                MineButton mb = gb.bm.getMineButton(i, j);
+//                if(!mb.isSweeped() && !mb.isFlag()){//没被扫过不是旗，就点
+//                    autoEvents.mousePressed(mb, AutoEvents.LEFT);
+//                    try {
+//                        Thread.sleep(pressTime);
+//                    } catch (InterruptedException e) {}
+//                    autoEvents.mouseReleased(mb, AutoEvents.LEFT);
+//                    autoEvents.mouseClicked(mb, AutoEvents.LEFT);
+//                    return;
+//                }
+//            }
 //        }
+        /*以下是随机点*/
+        int x, y;
+        Random random = new Random();
+        while(true){
+            x = random.nextInt(gb.bm.getCols());
+            y = random.nextInt(gb.bm.getRows());
+            MineButton mb = gb.bm.getMineButton(y, x);
+            if(mb.isFlag() || mb.isSweeped())   continue;
+            autoEvents.mousePressed(mb, AutoEvents.LEFT);
+            try {
+                Thread.sleep(pressTime);
+            } catch (InterruptedException e) {}
+            autoEvents.mouseReleased(mb, AutoEvents.LEFT);
+            autoEvents.mouseClicked(mb, AutoEvents.LEFT);
+            return;
+        }
     }
 
     public int getPressTime() {
