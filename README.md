@@ -17,7 +17,7 @@
 5. 第一下不会踩到雷。
 
 ## 主界面
-<img src="https://raw.githubusercontent.com/PowerPollery/MinesweeperV1/master/%E4%B8%BB%E7%95%8C%E9%9D%A2.PNG" alt="主界面" width="400" height="460"/>
+<img src="https://raw.githubusercontent.com/PowerPollery/MinesweeperV1/master/%E4%B8%BB%E7%95%8C%E9%9D%A2.PNG" alt="图片无法显示的话请使用代理" width="400" height="460"/>
 
 ## 文件一览
 <table>
@@ -93,7 +93,7 @@
 
 ## 代码结构
 
-<img src="https://github.com/PowerPollery/MinesweeperV1/blob/master/%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84.PNG" alt="代码结构"/>
+<img src="https://github.com/PowerPollery/MinesweeperV1/blob/master/%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84.PNG" alt="图片无法显示的话请使用代理"/>
 
 
 	
