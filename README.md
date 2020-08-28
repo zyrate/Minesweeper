@@ -14,10 +14,10 @@
 2. 自定义游戏。输入边数、行数、雷数可以生成地图，比XP系统的扫雷限制要小，最大可以生成**满屏**的游戏界面。
 3. **存档/读档。** 如果玩家在玩一个比较大的地图，那么这个功能就比较有用了。
 4. **自动扫雷。** 为了吸引玩家设计出了自动扫雷功能，在任何时候都可以让电脑帮玩家扫雷，可以设置速度，随时可以停止，增强了游戏的可玩性。
-
+5. 第一下不会踩到雷。
 
 ## 主界面
-<img src="https://raw.githubusercontent.com/PowerPollery/MinesweeperV1/master/%E4%B8%BB%E7%95%8C%E9%9D%A2.PNG" alt="主界面" width="400" height="460"/>
+<img src="https://raw.githubusercontent.com/PowerPollery/MinesweeperV1/master/%E4%B8%BB%E7%95%8C%E9%9D%A2.PNG" alt="图片无法显示的话请使用代理" width="400" height="460"/>
 
 ## 文件一览
 <table>
@@ -82,6 +82,10 @@
     <td>记旗数、计分</td>
   </tr>
   <tr>
+    <td>SettingDialog.java</td>
+    <td>设置自动扫雷的速度</td>
+  </tr>
+  <tr>
     <td>icons(目录)</td>
     <td>图片资源目录</td>
   </tr>
@@ -89,7 +93,7 @@
 
 ## 代码结构
 
-<img src="https://github.com/PowerPollery/MinesweeperV1/blob/master/%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84.PNG" alt="代码结构"/>
+<img src="https://github.com/PowerPollery/MinesweeperV1/blob/master/%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84.PNG" alt="图片无法显示的话请使用代理"/>
 
 
 	
